@@ -1,4 +1,14 @@
-*{
+/* *{
+  background-color: rgb(12, 212, 46);
+  color: darkblue;
+  margin: 25px;
+  padding: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+} */
+
+body {
   background-color: rgb(12, 212, 46);
   color: darkblue;
   margin: 25px;
