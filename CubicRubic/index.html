@@ -7,7 +7,22 @@
     <title>cubicrubic</title>
   </head>
   <body>
-    <div id="app"></div>
+    <h1>Cubic Equation Solver</h1>
+    <!-- user enters a, b, c, d for ax³ + bx² + cx + d = 0 -->
+    <form id="cubic-form">
+      <label>a: <input type="number" id="coef-a" value="1" step="any" required></label>
+      <label>b: <input type="number" id="coef-b" value="0" step="any" required></label>
+      <label>c: <input type="number" id="coef-c" value="0" step="any" required></label>
+      <label>d: <input type="number" id="coef-d" value="0" step="any" required></label>
+      <button type="button" id="solve-btn">Solve Cubic</button>
+    </form>
+
+    <!-- where we show the roots -->
+    <div id="results"></div>
+
+    <!-- simple canvas for the curve -->
+    <canvas id="graph" width="600" height="400"></canvas>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

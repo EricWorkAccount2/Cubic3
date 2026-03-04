@@ -1,19 +1,54 @@
-/* *{
-  background-color: rgb(12, 212, 46);
-  color: darkblue;
-  margin: 25px;
-  padding: 25px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  font-size: 20px;
-} */
+/* simple page styles */
+* {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background: #f0f0f0;
+  color: #333;
+}
 
-body {
-  background-color: rgb(12, 212, 46);
-  color: darkblue;
-  margin: 25px;
-  padding: 25px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-  font-size: 20px;
+/* title centered */
+h1 {
+  text-align: center;
+}
+
+/* arrange form fields side-by-side */
+form {
+  display: flex;
+  flex-direction: column; /* stack fields vertically */
+  gap: 1px;
+  align-items: left;
+  margin-bottom: 25px; /* was 1em */
+}
+
+/* label on its own line */
+label {
+  display: block;
+}
+
+/* small width for number inputs */
+input {
+  width: 64px; /* 4rem */
+}
+
+/* basic button style */
+button {
+  padding: 8px 16px; /* was 0.5em 1em */
+  font-size: 16px; /* was 1rem */
+  width: auto;           /* don't fill whole column */
+  max-width: 120px;      /* keep it reasonable */
+  align-self: left;    /* center inside form column */
+}
+
+/* result text centered */
+#results {
+  text-align: left;
+  margin-bottom: 16px; /* was 1em */
+}
+
+/* canvas centered with border */
+canvas {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #999;
 }
