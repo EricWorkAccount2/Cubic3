@@ -8,14 +8,14 @@
   </head>
   <body>
     <h1>Cubic Equation Solver</h1>
-    <!-- user enters a, b, c, d for ax³ + bx² + cx + d = 0 -->
-    <form id="cubic-form">
-      <label>a: <input type="number" id="coef-a" value="1" step="any" required></label>
-      <label>b: <input type="number" id="coef-b" value="0" step="any" required></label>
-      <label>c: <input type="number" id="coef-c" value="0" step="any" required></label>
-      <label>d: <input type="number" id="coef-d" value="0" step="any" required></label>
-      <button type="button" id="solve-btn">Solve Cubic</button>
-    </form>
+        <form id="quad-form">
+            <label for="a">A Value:<input type="number" id="a" name="a" required /></label>
+            <label for="b">B value:<input type="number" id="b" name="b" required /></label>
+            <label for="c">C value:<input type="number" id="c" name="c" required /></label>
+            <label for="d">D value:<input type="number" id="d" name="d" required /></label>
+            <label for="result">Result:<input type="text" id="result" name="result" /></label>
+            <input type="submit" value="Calculate" />
+        </form>
 
     <!-- where we show the roots -->
     <div id="results"></div>
