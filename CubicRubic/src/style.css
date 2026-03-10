@@ -1,44 +1,38 @@
 /* backgorund, honestly I could have used the "*" for universal */
 body {
-  background-color: rgb(215, 216, 161);
+  background-color: rgb(253, 255, 130);
 }
 
 h1 {
   color: rgb(0, 0, 0);
   text-decoration: underline;
   padding: 50px;
-  text-align: left;
+  text-align: center;
   margin: 0 100;
 }
 
-form {
+
+/*-------------------------------------Values--------------------------------*/
+
+.questions {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 100px;
   color: rgb(0, 0, 0);
   width: fit-content;
   font-weight: 100;
-}
-
-/* grid stuff */
-.content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: 0 100px;
-}
-
-.graph-container {
-  display: flex;
   flex-direction: column;
-  align-items: center;
 }
+
+/*---------------------------Label button stuffs-------------------------------*/
 
 form label {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
   font-size: 20px;
+  align-items: center;
+  display: contents;
 }
 
 form input {
@@ -62,6 +56,14 @@ form button {
   cursor: pointer;
   transition: all 0.2s ease;
   border: 1px solid black;
+}
+
+/*---------------------------Graph stuffs-------------------------------*/
+
+.grid-graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 canvas {
