@@ -16,16 +16,10 @@ h1 {
 
 .questions {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 100px;
-  color: rgb(0, 0, 0);
-  width: fit-content;
-  font-weight: 100;
   flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-
-/*---------------------------Label button stuffs-------------------------------*/
 
 form label {
   font-family: 'Courier New', Courier, monospace;
@@ -41,24 +35,24 @@ form input {
   border-radius: 5px;
   height: 27px;
   font-size: 20px;
-
+  align-items: center;
 }
 
-form button {
-  margin-top: 0.8rem;
-  padding: 0.75rem;
-  border: none;
-  border-radius: 10px;
-  background: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: 1rem;
+/*---------------------------Button-------------------------------*/
+
+ button {
+  font-family: 'Courier New', Courier, monospace;
   font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  font-size: 20px;
+  padding: 10px 20px;
   border: 1px solid black;
-}
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  cursor: pointer;
+ }
 
-/*---------------------------Graph stuffs-------------------------------*/
+/*---------------------------Graph canvas-------------------------------*/
 
 .grid-graph {
   display: flex;
@@ -76,4 +70,19 @@ h2 {
   text-align: center;
   color: rgb(0, 0, 0);
   margin-top: 20px;
+  font-size: 20px;
+}
+
+/*---------------------------Result-------------------------------*/
+.result-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 500px;
+  font-size: 25px;
 }

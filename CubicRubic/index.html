@@ -1,29 +1,37 @@
 <!doctype html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./src/style.css"/>
-    <title>cubicrubic</title>
-  </head>
-  <body>
-      <h1>Cubic Equation Solver</h1>
 
-    <div class="questions">
-      <form id="quad-form">
-          <label for="a">A Value:   <input type="number" id="a" name="a" required /></label>
-          <label for="b">B value:   <input type="number" id="b" name="b" required /></label>
-          <label for="c">C value:   <input type="number" id="c" name="c" required /></label>
-          <label for="d">D value:   <input type="number" id="d" name="d" required /></label>
-          <button id="solve-btn">Solve</button>
-      </form>
-    </div>
+<head>
+  <meta charset="UTF-8" />
 
-      <div class="grid-graph">
-        <h2>Graph</h2>
-        <canvas id="graph" width="500" height="500"></canvas>
-      </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./src/style.css" />
+  <title>cubicrubic</title>
+</head>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<body>
+  <h1>Cubic Equation Solver</h1>
+
+  <div class="questions">
+    <form id="quad-form">
+      <label for="a">Ax^3 Value: <input type="number" id="a" name="a" required /></label>
+      <label for="b">Bx^2 value: <input type="number" id="b" name="b" required /></label>
+      <label for="c">Cx value: <input type="number" id="c" name="c" required /></label>
+      <label for="d">D value: <input type="number" id="d" name="d" required /></label>
+    </form>
+    <button id="solve-btn">Solve</button>
+  </div>
+  <div class="result-container">
+    <h2>Result</h2>
+    <div id="result"></div>
+  </div>
+  <div class="grid-graph">
+    <h3>Graph</h3>
+    <canvas id="graph" width="750" height="750"></canvas>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
